@@ -1,3 +1,21 @@
 {
-	"api_key":"R0NS3CCGAF07OZOM"
+	"api": {
+		"api_key": "R0NS3CCGAF07OZOM",
+		"stock_api": "https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey={}",
+		"news_api": "https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={}&apikey={}"
+	},
+	"db": {
+		"host": "localhost",
+		"port": 27017,
+		"db_name": "daily_tick.db"
+	},
+	"emails": {
+		"to": [
+			"gautham.kolluru@gmail.com",
+			"sakollur@cisco.com"
+		],
+		"from": [
+			"gautham.kolluru@gmail.com"
+		]
+	}
 }
