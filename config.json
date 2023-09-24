@@ -1,12 +1,42 @@
 {
-	"api": {
-		"api_key": "R0NS3CCGAF07OZOM",
+	"alphavantage": {
+		"api": "https://www.alphavantage.co/query?",
+		"functions": {
+			"TIME_SERIES_INTRADAY": "TIME_SERIES_INTRADAY",
+			"TIME_SERIES_DAILY": "TIME_SERIES_DAILY",
+			"TIME_SERIES_DAILY_ADJUSTED": "TIME_SERIES_DAILY_ADJUSTED",
+			"TIME_SERIES_WEEKLY": "TIME_SERIES_WEEKLY",
+			"TIME_SERIES_WEEKLY_ADJUSTED": "TIME_SERIES_WEEKLY_ADJUSTED",
+			"TIME_SERIES_MONTHLY": "TIME_SERIES_MONTHLY",
+			"TIME_SERIES_MONTHLY_ADJUSTED": "TIME_SERIES_MONTHLY_ADJUSTED",
+			"GLOBAL_QUOTE": "GLOBAL_QUOTE",
+			"SYMBOL_SEARCH": "SYMBOL_SEARCH",
+			"SECTOR": "SECTOR",
+			"FOREX": "FX_INTRADAY",
+			"CRYPTO": "DIGITAL_CURRENCY_INTRADAY",
+			"TOP_GAINERS_LOSERS": "TOP_GAINERS_LOSERS",
+			"NEWS_SENTIMENT": "NEWS_SENTIMENT"
+		},
+		"params": {
+			"DEFAULT": [
+				"api_key"
+			],
+			"TOP_GAINERS_LOSERS": [],
+			"NEWS_SENTIMENT": [
+				"tickers"
+			],
+			"SYMBOL_SEARCH": [
+				"keywords"
+			]
+		},
 		"stock_api": "https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey={}",
 		"news_api": "https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={}&apikey={}"
 	},
+	"news_api": {
+		"api_key": "pub_29992e7bac62ca6703f4bd421b2d5b25e8199",
+		"news_api": "https://newsdata.io/api/1/news?apikey={}&q={}"
+	},
 	"db": {
-		"host": "localhost",
-		"port": 27017,
 		"db_name": "daily_tick.db"
 	},
 	"emails": {
